@@ -3,15 +3,43 @@ import "../styles/global.css"
 const { title } = Astro.props;
 ---
 
+<script>
+	import { dark, toggleDarkMode } from "../themeToggle.ts"
+  
+	document.addEventListener('DOMContentLoaded', () => {
+	  const darkModeButton = document.getElementById('darkModeButton');
+	  const icon = darkModeButton.querySelector('i');
+
+	  darkModeButton.addEventListener('click', () => {
+		toggleDarkMode();
+  
+		if (dark) {
+        icon.className = "fa-regular fa-sun fa-xl  absolute top-[4rem] right-[1rem] md:top-[3.5rem] md:right-[10rem] cursor-pointer text-white";
+      } else {
+        icon.className = "fa-regular fa-moon fa-xl  absolute top-[4rem] right-[1rem] md:top-[3.5rem] md:right-[10rem] cursor-pointer";
+      }
+  
+		// console.log("Updated icon:", icon);
+	  });
+	});
+</script>
+
+
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+		<meta name="description" content="Anwar Sadhik Portfolio built with Astro" />
+		<script src="https://kit.fontawesome.com/275c8ae050.js" crossorigin="anonymous"></script>
 		<title>{title}</title>
 	</head>
-	<body class="bg-amber-50 antialiased min-h-screen">
+	<body class="bg-amber-50 antialiased min-h-screen dark:bg-slate-800 dark:transition-all">
 		<slot />
+		<button id="darkModeButton">
+			  <i class="fa-regular fa-moon fa-xl absolute top-[4rem] right-[1rem] md:top-[3.5rem] md:right-[10rem] cursor-pointer"				
+			  ></i>
+		  </button>
 	</body>
 </html>

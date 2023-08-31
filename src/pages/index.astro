@@ -3,56 +3,58 @@ import MainLayout from "../layouts/MainLayout.astro";
 ---
 
 <MainLayout title="Anwar Sadhik">
-  <main class="md:mx-auto md:py-4 container">
+  <main class="md:mx-auto md:py-4 container dark:text-white something:text-6xl overflow-hidden">
     <section
       class="flex flex-row flex-wrap items-center lg:items-start lg:flex-row lg:flex-nowrap gap-2"
     >
+    <span class="cursor-pointer" title="Hey it's me - A full Snack Developer">
       <img
-        src="/anwar.png"
-        alt="me"
-        class="h-24 w-24 md:h-40 md:w-40 rounded-full object-cover mt-4"
+      src="/me.png"
+      alt="me"
+      class="h-24 w-24 md:h-40 md:w-40 rounded-full object-cover mt-4"
       />
+    </span>
       <section
-        class="flex flex-col items-center md:items-start lg:items-start md:py-4"
+        class="flex flex-col items-center md:items-start lg:items-start md:py-4 p-3"
       >
-        <h1 class="font-bold text-3xl py-1 md:ml-4">
-          Hi there, I'm <span class="text-amber-700 text-4xl font-extrabold"
+        <h1 class="font-bold text-2xl md:text-3xl py-1 md:ml-4">
+          Hi there, I'm <span class="text-amber-700 text-4xl font-extrabold dark:text-amber-400"
             >Anwar Sadhik 👋🏼</span
           >
         </h1>
 
-        <p class="flex flex-col space-y-0.5 md:ml-4">
-          <span class="flex items-center text-sm md:text-base">
-            i'm a Full stack Developer who loves to write
-            <strong class="pl-2 underline decoration-wavy decoration-red-600"
-              >TypeScript</strong
-            >
-            <img
+        <p class="flex flex-col space-y-0.5 md:ml-4 text-lg">
+          Welcome to my Personal slice of the internet,
+          <span class="flex flex-col md:flex-row md:items-center text-base">
+
+            <p class="flex items-center justify-start flex-row md:ml-4 flex-wrap text-lg">
+              i'm a Full stack
+              Developer who loves to write
+                <strong class="pl-2 underline decoration-wavy decoration-red-600"
+                >TypeScript</strong
+              >
+              <img
               width="30"
               height="30"
               src="https://img.icons8.com/fluency/48/typescript--v2.png"
               alt="typescript"
-              class="ml-2"
-            />
-             and <strong class="pl-2">React</strong>
-            <img
+              class="ml-2 inline-flex"
+              />
+              and <strong class="pl-2">React</strong>
+              <img
               width="30"
               height="30"
               src="https://img.icons8.com/color/48/react-native.png"
               alt="react"
-              class="ml-2"
-            />
+              class="ml-2 inline-flex"
+              />
+            </p>
           </span>
 
-          <span> i like two things Cats and Computers.</span>
-          <span class="flex items-center gap-x-4 py-2">
+          <span class="md:ml-4 text-lg mr-auto">i like two things Cats and Computers.</span>
+          <span class="flex items-center gap-x-4 py-2 md:ml-4">
             <a href="https://github.com/AnwarSadhik">
-              <img
-                width="30"
-                height="30"
-                src="https://img.icons8.com/ios-glyphs/30/github.png"
-                alt="github"
-              />
+              <i class="fa-brands fa-github fa-xl cursor-pointer"></i>
             </a>
             <a
               href="https://twitter.com/anwarexe?t=wHBNB7qWfWIFOeqaJrAu6Q&s=09"
@@ -73,8 +75,8 @@ import MainLayout from "../layouts/MainLayout.astro";
               />
             </a>
           </span>
-          <span class="py-8">
-            <button class="bg-amber-200 text-black py-2 px-4 font-bold">
+          <span class="md:py-8 py-4 md:ml-4">
+            <button class="bg-amber-200 text-black py-2 px-4 font-bold dark:bg-amber-100">
               <a href="https://resume.io/r/kN4i0gZhR" target="_blank">
                 View CV
               </a>
@@ -82,13 +84,14 @@ import MainLayout from "../layouts/MainLayout.astro";
           </span>
         </p>
       </section>
+        </button>
     </section>
 
     <section>
-      <h2 class="text-2xl md:text-3xl font-extrabold">Who am I?</h2>
+      <h2 class="text-2xl md:text-3xl font-extrabold px-2 md:px-0">Who am I?</h2>
       <div class="w-full border-b mt-2 border-[1px] border-slate-300"></div>
-      <section class="flex pt-4 flex-wrap gap-x-16">
-        <div class="md:max-w-4xl">
+      <section class="flex pt-4 flex-wrap gap-x-16 p-3">
+        <div class="md:max-w-4xl max-w-full">
           <div class="flex flex-col space-y-4 w-full">
             <p class="w-full text-base">
               A website artisan from design to deployment, experienced in
@@ -147,8 +150,8 @@ import MainLayout from "../layouts/MainLayout.astro";
           </div>
         </div>
 
-        <div>
-          <h1 class="font-extrabold text-2xl text-amber-800 mb-2">
+        <div class="mt-4 md:mt-0">
+          <h1 class="font-extrabold text-2xl text-amber-800 mb-2 dark:text-amber-400">
             <span>
               <img
                 width="33"
@@ -161,16 +164,16 @@ import MainLayout from "../layouts/MainLayout.astro";
             </span>
           </h1>
           <ul
-            class="grid border-l border-t border-b border-slate-300 md:py-4 md:space-x-8 md:space-y-2 grid-cols-2 gap-0.5 text-slate-800 list-disc"
+            class="grid border-l border-t border-b border-slate-300 md:py-4 space-x-4 md:space-x-8 md:space-y-2 grid-cols-2 gap-0.5 text-slate-800 list-disc dark:border-amber-400 w-full  md:mx-1 p-4 md:px-0"
           >
             <li
-              class="flex flex-col gap-0.5 md:gap-1.5 md:flex-row md:items-center md:mx-8"
+              class="flex flex-col gap-0.5 md:gap-1.5 md:flex-row md:items-center md:mx-8 mx-4"
             >
-              <p class="text-slate-800 w-32 md:w-24">Typescript</p>
-              <div class="border-2 flex md:w-[80px] h-3 border-slate-800">
+              <p class="text-slate-800 w-32 md:w-24 dark:text-white">Typescript</p>
+              <div class="border-2 flex md:w-[80px] h-3 border-slate-800 dark:border-amber-400">
                 <div
-                  class="h-full skill-level bg-amber-700"
-                  data-skill-level="70"
+                  class="h-full skill-level bg-amber-700 dark:bg-amber-200"
+                  data-skill-level="75"
                 >
                 </div>
               </div>
@@ -179,10 +182,10 @@ import MainLayout from "../layouts/MainLayout.astro";
             <li
               class="flex flex-col gap-0.5 md:gap-1.5 md:flex-row md:items-center"
             >
-              <p class="text-slate-800 w-32 md:w-24">Tailwind</p>
-              <div class="border-2 flex md:w-[80px] h-3 border-slate-800">
+              <p class="text-slate-800 w-32 md:w-24 dark:text-white">Tailwind</p>
+              <div class="border-2 flex md:w-[80px] h-3 border-slate-800 dark:border-amber-400">
                 <div
-                  class="h-full skill-level bg-amber-700"
+                  class="h-full skill-level bg-amber-700 dark:bg-amber-200"
                   data-skill-level="80"
                 >
                 </div>
@@ -192,10 +195,10 @@ import MainLayout from "../layouts/MainLayout.astro";
             <li
               class="flex flex-col gap-0.5 md:gap-1.5 md:flex-row md:items-center"
             >
-              <p class="text-slate-800 w-32 md:w-24">Trpc</p>
-              <div class="border-2 flex md:w-[80px] h-3 border-slate-800">
+              <p class="text-slate-800 w-32 md:w-24 dark:text-white">Trpc</p>
+              <div class="border-2 flex md:w-[80px] h-3 border-slate-800 dark:border-amber-400">
                 <div
-                  class="h-full skill-level bg-amber-700"
+                  class="h-full skill-level bg-amber-700 dark:bg-amber-200"
                   data-skill-level="50"
                 >
                 </div>
@@ -204,10 +207,10 @@ import MainLayout from "../layouts/MainLayout.astro";
             <li
               class="flex flex-col gap-0.5 md:gap-1.5 md:flex-row md:items-center"
             >
-              <p class="text-slate-800 w-32 md:w-24">NodeJS</p>
-              <div class="border-2 flex md:w-[80px] h-3 border-slate-800">
+              <p class="text-slate-800 w-32 md:w-24 dark:text-white">NodeJS</p>
+              <div class="border-2 flex md:w-[80px] h-3 border-slate-800 dark:border-amber-400">
                 <div
-                  class="h-full skill-level bg-amber-700"
+                  class="h-full skill-level bg-amber-700 dark:bg-amber-200"
                   data-skill-level="70"
                 >
                 </div>
@@ -216,10 +219,10 @@ import MainLayout from "../layouts/MainLayout.astro";
             <li
               class="flex flex-col gap-0.5 md:gap-1.5 md:flex-row md:items-center"
             >
-              <p class="text-slate-800 w-32 md:w-24">React</p>
-              <div class="border-2 flex md:w-[80px] h-3 border-slate-800">
+              <p class="text-slate-800 w-32 md:w-24 dark:text-white">React</p>
+              <div class="border-2 flex md:w-[80px] h-3 border-slate-800 dark:border-amber-400">
                 <div
-                  class="h-full skill-level bg-amber-700"
+                  class="h-full skill-level bg-amber-700 dark:bg-amber-200"
                   data-skill-level="75"
                 >
                 </div>
@@ -228,10 +231,10 @@ import MainLayout from "../layouts/MainLayout.astro";
             <li
               class="flex flex-col gap-0.5 md:gap-1.5 md:flex-row md:items-center"
             >
-              <p class="text-slate-800 w-32 md:w-24">postgreSQL</p>
-              <div class="border-2 flex md:w-[80px] h-3 border-slate-800">
+              <p class="text-slate-800 w-32 md:w-24 dark:text-white">postgreSQL</p>
+              <div class="border-2 flex md:w-[80px] h-3 border-slate-800 dark:border-amber-400">
                 <div
-                  class="h-full skill-level bg-amber-700"
+                  class="h-full skill-level bg-amber-700 dark:bg-amber-200"
                   data-skill-level="45"
                 >
                 </div>
@@ -240,11 +243,11 @@ import MainLayout from "../layouts/MainLayout.astro";
             <li
               class="flex flex-col gap-0.5 md:gap-1.5 md:flex-row md:items-center"
             >
-              <p class="text-slate-800 w-32 md:w-24">MongoDB</p>
-              <div class="border-2 flex md:w-[80px] h-3 border-slate-800">
+              <p class="text-slate-800 w-32 md:w-24 dark:text-white">MongoDB</p>
+              <div class="border-2 flex md:w-[80px] h-3 border-slate-800 dark:border-amber-400">
                 <div
-                  class="h-full skill-level bg-amber-700"
-                  data-skill-level="60"
+                  class="h-full skill-level bg-amber-700 dark:bg-amber-200"
+                  data-skill-level="70"
                 >
                 </div>
               </div>
@@ -252,35 +255,35 @@ import MainLayout from "../layouts/MainLayout.astro";
             <li
               class="flex flex-col gap-0.5 md:gap-1.5 md:flex-row md:items-center"
             >
-              <p class="text-slate-800 w-32 md:w-24">Firebase</p>
-              <div class="border-2 flex md:w-[80px] h-3 border-slate-800">
+              <p class="text-slate-800 w-32 md:w-24 dark:text-white">Firebase</p>
+              <div class="border-2 flex md:w-[80px] h-3 border-slate-800 dark:border-amber-400">
                 <div
-                  class="h-full skill-level bg-amber-700"
-                  data-skill-level="40"
-                >
-                </div>
-              </div>
-            </li>
-            <li
-              class="flex flex-col gap-0.5 md:gap-1.5 md:flex-row md:items-center"
-            >
-              <p class="text-slate-800 w-32 md:w-24">NextJS</p>
-              <div class="border-2 flex md:w-[80px] h-3 border-slate-800">
-                <div
-                  class="h-full skill-level bg-amber-700"
-                  data-skill-level="60"
-                >
-                </div>
-              </div>
-            </li>
-            <li
-              class="flex flex-col gap-0.5 md:gap-1.5 md:flex-row md:items-center"
-            >
-              <p class="text-slate-800 w-32 md:w-24">ORM's</p>
-              <div class="border-2 flex md:w-[80px] h-3 border-slate-800">
-                <div
-                  class="h-full skill-level bg-amber-700"
+                  class="h-full skill-level bg-amber-700 dark:bg-amber-200"
                   data-skill-level="50"
+                >
+                </div>
+              </div>
+            </li>
+            <li
+              class="flex flex-col gap-0.5 md:gap-1.5 md:flex-row md:items-center"
+            >
+              <p class="text-slate-800 w-32 md:w-24 dark:text-white">NextJS</p>
+              <div class="border-2 flex md:w-[80px] h-3 border-slate-800 dark:border-amber-400">
+                <div
+                  class="h-full skill-level bg-amber-700 dark:bg-amber-200"
+                  data-skill-level="70"
+                >
+                </div>
+              </div>
+            </li>
+            <li
+              class="flex flex-col gap-0.5 md:gap-1.5 md:flex-row md:items-center"
+            >
+              <p class="text-slate-800 w-32 md:w-24 dark:text-white">ORM's</p>
+              <div class="border-2 flex md:w-[80px] h-3 border-slate-800 dark:border-amber-400">
+                <div
+                  class="h-full skill-level bg-amber-700 dark:bg-amber-200"
+                  data-skill-level="70"
                 >
                 </div>
               </div>
@@ -291,29 +294,31 @@ import MainLayout from "../layouts/MainLayout.astro";
     </section>
 
     <section>
-      <h2 class="font-extrabold text-3xl">Some Things I've Done.</h2>
-      <div class="border border-slate-300 mt-2"></div>
+      <h2 class="font-extrabold text-2xl mx-2 md:mx-0 md:text-3xl">Some Things I've Done.</h2>
+      <div class="border border-slate-400 mt-2"></div>
 
       <div
         class="flex rounded-md md:items-center border border-amber-500 mt-4 flex-col gap-8 md:flex-row items-center hover:-translate-y-1 transition-all p-2"
       >
-        <div class="flex gap-x-8 items-center justify-start">
+        <div class="flex flex-col md:flex-row gap-x-8 items-center justify-start">
           <img
-            src="/public/projects/quizzmefy.png"
+            src="/projects/quizzmefy.png"
             alt="quizzmefy"
-            class="w-1/3 h-full object-contain cursor-pointer"
+            class="md:w-1/3 md:h-full object-contain cursor-pointer"
           />
           <div class="flex flex-col justify-start items-start space-y-4">
             <h3 class="font-bold text-2xl">
               Quizzmefy
               <a href="https://quizzmefy.vercel.app" target="_blank">
-                <img
+                <!-- <img
                   width="25"
                   height="25"
                   src="https://img.icons8.com/fluency-systems-filled/48/external-link.png"
                   alt="external-link"
                   class="inline-flex items-center cursor-pointer"
-                />
+                /> -->
+                <i class="fa-solid fa-up-right-from-square fa-sm"></i>
+
               </a>
             </h3>
             <h2 class="max-w-2xl">
@@ -323,22 +328,22 @@ import MainLayout from "../layouts/MainLayout.astro";
             <p>stack:</p>
             <div class="flex gap-x-4 items-center">
               <p
-                class="border-2 text-black py-1 px-2 text-sm border-amber-200 rounded-md"
+                class="border-2 text-black py-1 px-2 text-sm border-amber-200 rounded-md dark:bg-amber-100"
               >
                 NextJS
               </p>
               <p
-                class="border-2 text-black py-1 px-2 text-sm border-amber-200 rounded-md"
+                class="border-2 text-black py-1 px-2 text-sm border-amber-200 rounded-md dark:bg-amber-100"
               >
                 Prisma
               </p>
               <p
-                class="border-2 text-black py-1 px-2 text-sm border-amber-200 rounded-md"
+                class="border-2 text-black py-1 px-2 text-sm border-amber-200 rounded-md dark:bg-amber-100"
               >
                 NextAuth
               </p>
               <p
-                class="border-2 text-black py-1 px-2 text-sm border-amber-200 rounded-md"
+                class="border-2 text-black py-1 px-2 text-sm border-amber-200 rounded-md dark:bg-amber-100"
               >
                 react query
               </p>
@@ -347,25 +352,26 @@ import MainLayout from "../layouts/MainLayout.astro";
         </div>
       </div>
       <div
-        class="flex rounded-md md:items-center border border-amber-500 mt-4 flex-col gap-8 md:flex-row items-center hover:-translate-y-1 transition-all p-4"
+        class="flex rounded-md md:items-center border border-amber-500 mt-4 flex-col gap-8 md:flex-row items-center hover:-translate-y-1 transition-all p-8 dark:text-white"
       >
-        <div class="flex gap-x-8 items-center justify-start">
+        <div class="flex flex-col md:flex-row gap-x-8 items-center justify-start">
           <img
-            src="/public/projects/mediaTracker.png"
+            src="/projects/mediaTracker.png"
             alt="media-tracker"
-            class="w-1/3 h-full object-contain cursor-pointer"
+            class="md:w-1/3 md:h-full object-contain cursor-pointer"
           />
           <div class="flex flex-col justify-start items-start space-y-4">
             <h3 class="font-bold text-2xl">
               Media Tracker
               <a href="https://mediatracker-app.onrender.com/" target="_blank">
-                <img
+                <!-- <img
                   width="25"
                   height="25"
                   src="https://img.icons8.com/fluency-systems-filled/48/external-link.png"
                   alt="external-link"
                   class="inline-flex items-center cursor-pointer"
-                />
+                /> -->
+                <i class="fa-solid fa-up-right-from-square fa-sm"></i>
               </a>
             </h3>
             <h2 class="max-w-2xl">
@@ -375,22 +381,22 @@ import MainLayout from "../layouts/MainLayout.astro";
             <p>stack:</p>
             <div class="flex gap-x-4 items-center">
               <p
-                class="border-2 text-black py-1 px-2 text-sm border-amber-200 rounded-md"
+                class="border-2 text-black py-1 px-2 text-sm border-amber-200 rounded-md dark:bg-amber-100"
               >
                 MongoDB
               </p>
               <p
-                class="border-2 text-black py-1 px-2 text-sm border-amber-200 rounded-md"
+                class="border-2 text-black py-1 px-2 text-sm border-amber-200 rounded-md dark:bg-amber-100"
               >
                 expressJs
               </p>
               <p
-                class="border-2 text-black py-1 px-2 text-sm border-amber-200 rounded-md"
+                class="border-2 text-black py-1 px-2 text-sm border-amber-200 rounded-md dark:bg-amber-100"
               >
                 ReactJs
               </p>
               <p
-                class="border-2 text-black py-1 px-2 text-sm border-amber-200 rounded-md"
+                class="border-2 text-black py-1 px-2 text-sm border-amber-200 rounded-md dark:bg-amber-100"
               >
                 NodeJs
               </p>
@@ -401,23 +407,24 @@ import MainLayout from "../layouts/MainLayout.astro";
       <div
         class="flex rounded-md md:items-center border border-amber-500 mt-4 flex-col gap-8 md:flex-row items-center hover:-translate-y-1 transition-all p-4"
       >
-        <div class="flex gap-x-8 items-center justify-start">
+        <div class="flex flex-col md:flex-row gap-x-8 items-center justify-start">
           <img
-            src="/public/projects/todo.png"
+            src="/projects/todo.png"
             alt="todo-app"
-            class="w-1/3 h-full object-contain cursor-pointer"
+            class="md:w-1/3 md:h-full object-contain cursor-pointer"
           />
           <div class="flex flex-col justify-start items-start space-y-4">
             <h3 class="font-bold text-2xl">
               ToDo App
               <a href="https://anwars-todoapp.netlify.app/" target="_blank">
-                <img
+                <!-- <img
                   width="25"
                   height="25"
                   src="https://img.icons8.com/fluency-systems-filled/48/external-link.png"
                   alt="external-link"
                   class="inline-flex items-center cursor-pointer"
-                />
+                /> -->
+                <i class="fa-solid fa-up-right-from-square fa-sm"></i>
               </a>
             </h3>
             <h2 class="max-w-2xl">
@@ -428,12 +435,12 @@ import MainLayout from "../layouts/MainLayout.astro";
             <p>stack:</p>
             <div class="flex gap-x-4 items-center">
               <p
-                class="border-2 text-black py-1 px-2 text-sm border-amber-200 rounded-md"
+                class="border-2 text-black py-1 px-2 text-sm border-amber-200 rounded-md dark:bg-amber-100"
               >
                 ReactJs
               </p>
               <p
-                class="border-2 text-black py-1 px-2 text-sm border-amber-200 rounded-md"
+                class="border-2 text-black py-1 px-2 text-sm border-amber-200 rounded-md dark:bg-amber-100"
               >
                 PWA
               </p>
@@ -444,26 +451,26 @@ import MainLayout from "../layouts/MainLayout.astro";
     </section>
 
     <section class="mt-4 mb-10">
-      <h2 class="text-3xl font-bold">What I'm doing/did</h2>
+      <h2 class="text-2xl mx-2 md:mt-0 md:text-3xl font-bold">What I'm doing/did</h2>
       <div class="border-b border-slate-300 mt-2"></div>
       <ul class="mt-4">
         <li class="list-disc">
-          <div class="flex items-center gap-x-4">
-            <h2 class="text-3xl font-bold text-amber-700">
+          <div class="flex flex-col md:flex-row md:items-center gap-x-4">
+            <h2 class="text-2xl md:text-3xl font-bold text-amber-700 dark:text-blue-400 whitespace-nowrap">
               🕵️ Full Stack Associate
             </h2>
             <a href="https://qurinomsolutions.com/" target="_blank">
-              <p class="underline text-violet-700 cursor-pointer">
+              <p class= "text-violet-700 cursor-pointer text-sm md:text-base whitespace-nowrap mr-4 md:mr-0">
                 Qurinom solutions
               </p>
             </a>
           </div>
-          <div class="flex items-center space-x-2 text-xs text-gray-700">
+          <div class="flex items-center space-x-2 text-xs text-gray-700 dark:text-gray-400">
             <p>Internship</p>.
             <p>Feb 2023 to Aug 2023</p>.
             <p>6mos</p>
           </div>
-          <div class="text-lg">
+          <div class="text-base md:text-lg">
             <p>Team lead for 2 projects</p>
             <p>
               Engineered three full stack web applications: catering to
@@ -473,12 +480,37 @@ import MainLayout from "../layouts/MainLayout.astro";
             <p>familiarized on cloud and DevOps technologies</p>
           </div>
         </li>
+
+        <li class="mt-8 list-disc">
+          <div class="flex flex-col md:flex-row items-center gap-x-4">
+            <h2 class="text-3xl font-bold text-amber-700 dark:dark:text-blue-400">
+              🕵️ B.Tech in Computer Science
+            </h2>
+            <a>
+              <p class="text-violet-700 cursor-pointer ">
+                kallam haranadhareddy institute of technology
+              </p>
+            </a>
+          </div>
+          <div class="flex items-center space-x-2 text-xs text-gray-700 dark:text-gray-400">
+            <p>Full time</p>.
+            <p>2019 to May 2023</p>.
+            <p>4yrs</p>
+          </div>
+        </li>
       </ul>
     </section>
 
-    <p class="text-center font-bold">Kudos to <span class="text-amber-600">learning</span> & <span class="text-amber-600">Growing</span>
-      <img width="23" height="23" src="https://img.icons8.com/external-vectorslab-flat-vectorslab/53/external-rocket-project-management-and-web-marketing-vectorslab-flat-vectorslab.png" alt="external-rocket-project-management-and-web-marketing-vectorslab-flat-vectorslab"
-      class="inline-flex ml-4"
+    <p class="text-center font-bold">
+      Kudos to <span class="text-amber-600 dark:text-amber-400">learning</span> & <span
+        class="text-amber-600 dark:text-amber-400">Growing</span
+      >
+      <img
+        width="23"
+        height="23"
+        src="https://img.icons8.com/external-vectorslab-flat-vectorslab/53/external-rocket-project-management-and-web-marketing-vectorslab-flat-vectorslab.png"
+        alt="external-rocket-project-management-and-web-marketing-vectorslab-flat-vectorslab"
+        class="inline-flex ml-4"
       />
     </p>
   </main>
